@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+</html>
+
+#include <stdio.h>
+struck inst {
+    char name[10];
+    int age;
+    struct insa* impl_a;
+    struct insa* impl_b;
+};
+
+main() {
+    struct insa p1 = {"kim", 28, NULL, NULL};
+    struct insa p2 = {"Lee", 36, NULL, NULL};
+    struct insa p3 = {"Park", 41, NULL, NULL};
+    p1.impl_a = &p2;
+    p2.impl_b = &p3;
+    printf("%s\n", p1.impl_a( )name);
+    printf("%d\n", p2.impl_b( )age);
+}
