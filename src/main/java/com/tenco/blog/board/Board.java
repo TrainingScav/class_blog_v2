@@ -1,10 +1,10 @@
-package com.tenco.blog.model;
+package com.tenco.blog.board;
 
+import com.tenco.blog.utils.MyDateUtil;
 import jakarta.persistence.*;
 import lombok.Data;
 
 import java.sql.Timestamp;
-import com.tenco.blog.utils.*;
 
 
 @Data
